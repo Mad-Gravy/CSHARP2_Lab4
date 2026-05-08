@@ -106,14 +106,14 @@ namespace CardTests
 
             Console.WriteLine("Testing matching methods");
 
-            Console.WriteLine("Expecting true. " + c1.HasMatchingValue(c2));
-            Console.WriteLine("Expecting false. " + c1.HasMatchingValue(c3));
+            Console.WriteLine("Value match. Expecting true. " + c1.HasMatchingValue(c2));
+            Console.WriteLine("Value Match. Expecting false. " + c1.HasMatchingValue(c3));
 
-            Console.WriteLine("Expecting true. " + c1.HasMatchingSuit(c3));
-            Console.WriteLine("Expecting false. " + c1.HasMatchingSuit(c2));
+            Console.WriteLine("Suit Match. Expecting true. " + c1.HasMatchingSuit(c3));
+            Console.WriteLine("Suit Match. Expecting false. " + c1.HasMatchingSuit(c2));
 
-            Console.WriteLine("Expecting false. " + c1.HasMatchingValue(c4));
-            Console.WriteLine("Expecting false. " + c1.HasMatchingSuit(c4));
+            Console.WriteLine("Value Match. Expecting false. " + c1.HasMatchingValue(c4));
+            Console.WriteLine("Suit Match. Expecting false. " + c1.HasMatchingSuit(c4));
 
             Console.WriteLine();
         }
@@ -129,17 +129,17 @@ namespace CardTests
 
             Console.WriteLine("Testing color methods");
 
-            Console.WriteLine("Expecting false. " + c1.IsRed());
-            Console.WriteLine("Expecting true. " + c1.IsBlack());
+            Console.WriteLine("IsRed: Expecting false. " + c1.IsRed());
+            Console.WriteLine("IsBlack: Expecting true. " + c1.IsBlack());
 
-            Console.WriteLine("Expecting true. " + c2.IsRed());
-            Console.WriteLine("Expecting false. " + c2.IsBlack());
+            Console.WriteLine("IsRed: Expecting true. " + c2.IsRed());
+            Console.WriteLine("IsBlack: Expecting false. " + c2.IsBlack());
 
-            Console.WriteLine("Expecting true. " + c3.IsRed());
-            Console.WriteLine("Expecting false. " + c3.IsBlack());
+            Console.WriteLine("IsRed: Expecting true. " + c3.IsRed());
+            Console.WriteLine("IsBlack: Expecting false. " + c3.IsBlack());
 
-            Console.WriteLine("Expecting false. " + c4.IsRed());
-            Console.WriteLine("Expecting true. " + c4.IsBlack());
+            Console.WriteLine("IsRed: Expecting false. " + c4.IsRed());
+            Console.WriteLine("IsBlack: Expecting true. " + c4.IsBlack());
 
             Console.WriteLine();
         }
@@ -155,17 +155,17 @@ namespace CardTests
 
             Console.WriteLine("Testing value methods");
 
-            Console.WriteLine("Expecting true. " + c1.IsAce());
-            Console.WriteLine("Expecting false. " + c1.IsFaceCard());
+            Console.WriteLine("IsAce: Expecting true. " + c1.IsAce());
+            Console.WriteLine("IsFaceCard: Expecting false. " + c1.IsFaceCard());
 
-            Console.WriteLine("Expecting false. " + c2.IsAce());
-            Console.WriteLine("Expecting true. " + c2.IsFaceCard());
+            Console.WriteLine("IsAce: Expecting false. " + c2.IsAce());
+            Console.WriteLine("IsFaceCard: Expecting true. " + c2.IsFaceCard());
 
-            Console.WriteLine("Expecting false. " + c3.IsAce());
-            Console.WriteLine("Expecting true. " + c3.IsFaceCard());
+            Console.WriteLine("IsAce: Expecting false. " + c3.IsAce());
+            Console.WriteLine("IsFaceCard: Expecting true. " + c3.IsFaceCard());
 
-            Console.WriteLine("Expecting false. " + c4.IsAce());
-            Console.WriteLine("Expecting true. " + c4.IsFaceCard());
+            Console.WriteLine("IsAce: Expecting false. " + c4.IsAce());
+            Console.WriteLine("IsFaceCard: Expecting true. " + c4.IsFaceCard());
 
             Console.WriteLine();
         }
